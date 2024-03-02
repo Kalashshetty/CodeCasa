@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 import random
 
@@ -32,11 +27,10 @@ def guessing_game():
             print(f"Congratulations!!!! You've guessed it {target_number} correctly in {attempts} attempts!")
             break
 
-# Start the game
+
 guessing_game()
 
 
-# In[ ]:
 
 
 
