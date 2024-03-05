@@ -1,0 +1,25 @@
+
+
+
+def count_words(text):
+    words = text.split()
+    
+    word_counts = {}
+    
+    for word in words:
+        word = word.strip('.,!?;:"()[]{}')
+        
+        word = word.lower()
+        
+        if word in word_counts:
+            word_counts[word] += 1
+        else:
+            word_counts[word] = 1
+    
+    return word_counts
+
+text = "Welcome, Python interns, to our dynamic team! We are excited to see the skills and creativity you bring to our projects. Wishing you all the best as you dive into the world of Python programming and embark on this enriching journey with us"
+word_counts = count_words(text)
+
+for word, count in word_counts.items():
+    print(f"'{word}': {count}")
